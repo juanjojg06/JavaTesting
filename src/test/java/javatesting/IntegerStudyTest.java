@@ -33,6 +33,16 @@ public class IntegerStudyTest {
         assertTrue(vuit.equals(eight));
     }
 
+    @Test
+    public void binaryStudy(){
 
+        Integer dos = new Integer(2);
+        Integer vint = new Integer("20");
+        Integer tretze = 13;
+
+        assertEquals(" El nombre tretze val realment 13" , 13, tretze.intValue() );
+
+       // assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
+    }
 
 }
