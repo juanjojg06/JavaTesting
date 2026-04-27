@@ -9,7 +9,7 @@ public class SumTest {
     public void  sumTest(){
 int r = 1+1;
 
-assertEquals(" 1 + 1 =  2" , 3 , r);
+assertEquals(" 1 + 1 =  2" , 2 , r);
 
 }
 
