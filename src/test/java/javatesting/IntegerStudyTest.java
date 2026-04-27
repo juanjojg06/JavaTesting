@@ -11,7 +11,7 @@ public class IntegerStudyTest {
 
         Integer vuit = new Integer(8);
         Integer tretze = 13;
-        int esperat = 13;
+        int esperat = 15;
         assertEquals(" El nombre tretze val realment 13" , esperat, tretze.intValue() );
     }
 
