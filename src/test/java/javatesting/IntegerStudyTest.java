@@ -19,5 +19,17 @@ public class IntegerStudyTest {
     }
 
 
+    @Test
+    public void integerComparationStudy(){
+
+        Integer vuit = new Integer(8);
+        Integer eight = new Integer("8");
+
+        assertEquals(" El nombre vuit val realment 8" , 8, vuit.intValue() );
+
+        assertEquals(" El nombre eight val realment 8" , 8, eight.intValue() );
+    }
+
+
 
 }
