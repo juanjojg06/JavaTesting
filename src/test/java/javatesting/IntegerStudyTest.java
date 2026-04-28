@@ -14,10 +14,18 @@ public class IntegerStudyTest {
         Integer vint = new Integer("20");
         Integer tretze = 13;
         int esperat = 13;
+
+
+        int minim = -2147483648;
         assertEquals(" El nombre tretze val realment 13" , esperat, tretze.intValue() );
 
         assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
+
+        assertEquals("El valor minim de un Int es  -2147483648" , minim, Integer.MIN_VALUE );
+
+
     }
+
 
 
     @Test
@@ -42,7 +50,7 @@ public class IntegerStudyTest {
 
             String tipusPersones = " Hi ha " + Integer.toBinaryString(dos) + " de persones , les que entenen binari i les  que NO " +
                     "";
-        assertEquals( tipusPersones , 3, dos.intValue() );
+        assertEquals( tipusPersones , 2, dos.intValue() );
 
        // assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
     }
