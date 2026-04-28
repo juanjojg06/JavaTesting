@@ -42,7 +42,7 @@ public class IntegerStudyTest {
 
             String tipusPersones = " Hi ha " + Integer.toBinaryString(dos) + " de persones , les que entenen binari i les  que NO " +
                     "";
-        assertEquals( tipusPersones , 2, dos.intValue() );
+        assertEquals( tipusPersones , 3, dos.intValue() );
 
        // assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
     }
