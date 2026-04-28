@@ -21,7 +21,7 @@ public class IntegerStudyTest {
 
         assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
 
-        assertEquals("El valor minim de un Int es  -2147483648" , minim +1, Integer.MIN_VALUE );
+        assertEquals("El valor minim de un Int es  -2147483648" , minim , Integer.MIN_VALUE );
 
 
     }
@@ -54,6 +54,6 @@ public class IntegerStudyTest {
 
        // assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
     }
-    //minuto 16:52
+
 
 }
