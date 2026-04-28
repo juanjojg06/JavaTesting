@@ -40,9 +40,12 @@ public class IntegerStudyTest {
         Integer vint = new Integer("20");
         Integer tretze = 13;
 
-        assertEquals(" El nombre tretze val realment 13" , 13, tretze.intValue() );
+            String tipusPersones = " Hi ha " + Integer.toBinaryString(dos) + " de persones , les que entenen binari i les  que NO " +
+                    "";
+        assertEquals( tipusPersones , 2, dos.intValue() );
 
        // assertEquals(" El nombre tretze val realment 20" , 20, vint.intValue() );
     }
+    //minuto 16:52
 
 }
