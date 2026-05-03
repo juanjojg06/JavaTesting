@@ -47,4 +47,15 @@ public void correctPORT(){
     Assert.assertTrue("Comprovacion unicitat instancia del singleton", (instl1 == instl2));
 }
 
+
+    @Test
+
+
+    public void  singletonCorrectness2(){
+
+        AppParameters instl1 = AppParameters.getInstance();
+        AppParameters instl2 = new AppParameters();
+        Assert.assertTrue("Comprovacion unicitat instancia del singleton", (instl1 == instl2));
+    }
+
 }

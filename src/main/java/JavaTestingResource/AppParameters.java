@@ -9,7 +9,7 @@ public class AppParameters {
 
     private static  AppParameters instance ;
 
-    private  AppParameters(){
+    public   AppParameters(){
 
 
     }
