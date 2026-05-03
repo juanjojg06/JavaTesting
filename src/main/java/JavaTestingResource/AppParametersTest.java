@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class AppParametersTest {
 
-    public  static  final  String DOMAIN_EXPECTED = "127.0.0.1";
+    public  static  final  String DOMAIN_EXPECTED = "10.0.0.43";
 
     public  static  final  String PORT_EXPECTED = "80";
 
