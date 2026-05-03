@@ -14,7 +14,7 @@ public class AppParameters {
 
     }
 
-    public AppParameters getInstance(){
+    public static AppParameters getInstance(){
 
         if ( instance == null )
 
