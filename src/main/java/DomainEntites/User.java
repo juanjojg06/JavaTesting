@@ -1,9 +1,12 @@
 package DomainEntites;
+// 37:13 minuto
+import JavaTestingResource.PasswordUtils;
 
 public class User {
 private String name;
-private String password;
-
+private String password; // password is hash mode and salt
+private String salt; // va cambian a cada usuari
+// password == Hash( password_real +salt )
     public  User(){
         this("Tomeu" , "secret");
     }
@@ -11,16 +14,27 @@ private String password;
 public  User( String name , String password){
 
    this.name = name;
-   this.password = password;
-
+   //this.password = password; // es insegura
+    this.salt = PasswordUtils.genSalt();
+    //falta hacer hash amb salt amb passw
+    this.password=PasswordUtils.hashedPassword(password,this.salt);
 }
 
 public  String getName(){
     return  name;
 }
-
-public String getPassword(){
-    return password;
+public  void  setName(String name){
+        this.name=name;
 }
+
+
+
+
+public boolean verifyPassword(String passwordEntered){
+    return PasswordUtils.verityUserPassword(passwordEntered,salt,password);
+}
+    public  void  setPassword(String password){
+        this.password = PasswordUtils.hashedPassword(password , salt);
+    }
 
 }
