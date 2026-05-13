@@ -1,3 +1,4 @@
+/*
 package JavaTestingResource;
 import java.security.MessageDigest;
 import java.nio.charset.StandardCharsets;
@@ -26,3 +27,4 @@ public class HashUtils {
     }
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package JavaTestingResource;
 
 public class User {
@@ -27,3 +28,4 @@ public class User {
     }
 
 }
+*/

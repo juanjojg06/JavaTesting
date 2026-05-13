@@ -1,5 +1,5 @@
 package JavaTestingResource;
-
+/*
 public class PasswordHash {
 
 
@@ -25,3 +25,4 @@ public class PasswordHash {
     }
 
 }
+*/
