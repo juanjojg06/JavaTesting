@@ -1,8 +1,8 @@
 package DomainEntites;
 
 public class User {
-public String name;
-public String password;
+private String name;
+private String password;
 
 
 public  User(){
