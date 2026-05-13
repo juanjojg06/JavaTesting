@@ -4,11 +4,14 @@ public class User {
 private String name;
 private String password;
 
+    public  User(){
+        this("Tomeu" , "secret");
+    }
 
-public  User(){
+public  User( String name , String password){
 
-    name= "Tomeu";
-    password="secret";
+   this.name = name;
+   this.password = password;
 
 }
 
