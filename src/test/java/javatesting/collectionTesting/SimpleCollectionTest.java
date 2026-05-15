@@ -27,4 +27,29 @@ public class SimpleCollectionTest {
         //llistaNumeros.add("quatre");
         assertTrue(llistaNumeros.size() ==  4);
     }
+
+    @Test
+
+    public  void  diesSetmanes(){
+
+        List<String> diesSetmanes ;
+        List<String> diesFeiners = new ArrayList<>();
+        List<String> diesCapDeSetmanes ;
+       initDiesfeiners(diesFeiners);
+
+       assertTrue(diesFeiners.size() ==  5);
+    }
+
+
+
+    public  void initDiesfeiners(List<String> dies){
+        dies.add("dilluns");
+        dies.add("dimarts");
+        dies.add(" dimecres");
+        dies.add("dijous");
+        dies.add("divendres");
+    }
+
+
+
 }
