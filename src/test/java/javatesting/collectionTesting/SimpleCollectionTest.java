@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+
 public class SimpleCollectionTest {
 
     @Test
@@ -32,12 +32,20 @@ public class SimpleCollectionTest {
 
     public  void  diesSetmanes(){
 
-        List<String> diesSetmanes ;
+        List<String> diesSetmanes  = new ArrayList<>();
         List<String> diesFeiners = new ArrayList<>();
-        List<String> diesCapDeSetmanes ;
+        List<String> diesCapDeSetmanes = new ArrayList<>() ;
        initDiesfeiners(diesFeiners);
 
        assertTrue(diesFeiners.size() ==  5);
+
+    assertEquals(0, diesSetmanes.size());
+    assertFalse(diesSetmanes.containsAll(diesFeiners));
+
+   diesSetmanes.addAll(diesFeiners);
+
+        assertEquals(5, diesSetmanes.size());
+        assertTrue(diesSetmanes.containsAll(diesFeiners));
     }
 
 
