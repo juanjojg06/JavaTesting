@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class ExeptionsTets {
 
-    @Test
+    @Test (expected = NullPointerException.class)
 
     public  void NullPointerTest(){
 
