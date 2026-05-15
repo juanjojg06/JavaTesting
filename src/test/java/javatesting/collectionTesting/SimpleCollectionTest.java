@@ -35,6 +35,9 @@ public class SimpleCollectionTest {
         List<String> diesSetmanes  = new ArrayList<>();
         List<String> diesFeiners = new ArrayList<>();
         List<String> diesCapDeSetmanes = new ArrayList<>() ;
+        List<String> dieSenars = new ArrayList<>();
+        List<String> calculDies = new ArrayList<>();
+
        initDiesfeiners(diesFeiners);
 
        assertTrue(diesFeiners.size() ==  5);
@@ -55,13 +58,37 @@ public class SimpleCollectionTest {
         assertEquals(7, diesSetmanes.size());
         assertTrue(diesSetmanes.containsAll(diesCapDeSetmanes));
 
-        List<String> dieSenars = new ArrayList<>();
+
         dieSenars.addAll(diesSetmanes);
 
         assertTrue(dieSenars.contains("dimarts"));
 
         dieSenars.remove(1);
         assertFalse(dieSenars.contains("dimarts"));
+
+        dieSenars.remove("dijous");
+
+        List<String> diesFeinersSenars = new ArrayList();
+
+        diesFeinersSenars.addAll(dieSenars);
+
+        diesFeinersSenars.removeAll(diesCapDeSetmanes);
+
+        assertEquals(3 , diesFeinersSenars.size() );
+
+        assertFalse(diesFeinersSenars.contains("disabte"));
+
+        calculDies.addAll(diesSetmanes);
+        calculDies.clear();
+        assertTrue(calculDies.isEmpty());
+        calculDies.addAll(diesSetmanes);
+        calculDies.removeAll(diesCapDeSetmanes);
+
+        assertEquals( 5 , calculDies.size());
+
+
+
+
 
     }
 
