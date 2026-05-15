@@ -21,9 +21,10 @@ public class SimpleCollectionTest {
         for( String s : nombres ){
             numeros.add(s);
         }
-       assertTrue(numeros.size() ==  4);
+        numeros.add("quatre");
+       assertTrue(numeros.size() ==  5);
         List<String>llistaNumeros = Arrays.asList(nombres);
-
+        //llistaNumeros.add("quatre");
         assertTrue(llistaNumeros.size() ==  4);
     }
 }
