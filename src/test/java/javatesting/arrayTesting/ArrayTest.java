@@ -36,8 +36,8 @@ public class ArrayTest {
 
         public void facriArayParcialment() {
 
-        int[] nums = { 0,1,2,3,4,5,6,7,8,9};
-        Arrays.fill(nums,5,10,-1);
+            int[] nums = { 0,1,2,3,4,5,6,7,8,9};
+            Arrays.fill(nums,5,10,-1);
 
 
             for (int i = 5; i < nums.length ; i++) {
@@ -46,9 +46,17 @@ public class ArrayTest {
 
         }
 
+        @Test
+
+        public void copiaRangMatriu(){
+        String[] dies = { "dilluns" , "dimarts" , "dimecres" , "dijous" , "divendres" , "dissabte" , "diumenge" };
+        String[] feiners = Arrays.copyOfRange(dies, 0 , 5);
+
+        assertTrue( feiners.length == 5);
+        assertTrue(feiners[1].equals("dimarts"));
 
 
-
+        }
 
 
 
