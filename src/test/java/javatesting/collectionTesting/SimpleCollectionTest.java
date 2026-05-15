@@ -3,9 +3,7 @@ package javatesting.collectionTesting;
 import org.junit.Test;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -79,6 +77,8 @@ public class SimpleCollectionTest {
         assertFalse(diesFeinersSenars.contains("disabte"));
 
         calculDies.addAll(diesSetmanes);
+        assertTrue(calculDies.containsAll(diesFeiners));
+        assertTrue(calculDies.containsAll(diesCapDeSetmanes));
         calculDies.clear();
         assertTrue(calculDies.isEmpty());
         calculDies.addAll(diesSetmanes);
@@ -92,6 +92,32 @@ public class SimpleCollectionTest {
 
     }
 
+    @Test
+
+    public  void  provesAmbMapsTest(){
+        Map<String,String > map = new HashMap<>();
+        map.put( "fons" , "negre" );
+        map.put( "menus" , "blau" );
+        map.put( "dialeg" , "verd" );
+
+        assertEquals(map.size() , 3);
+
+        assertTrue(map.containsKey("menus"));
+        assertTrue(map.containsValue("negre"));
+
+        map.remove("dialeg");
+
+        assertEquals(map.size() , 2);
+
+        map.remove("clauInexistent");
+
+        assertEquals(map.size() , 2);
+
+        assertEquals(map.get("fons") , "negre" );
+
+
+    }
+
 
 
     public  void initDiesfeiners(List<String> dies){
@@ -100,6 +126,20 @@ public class SimpleCollectionTest {
         dies.add(" dimecres");
         dies.add("dijous");
         dies.add("divendres");
+    }
+
+    @Test
+
+    public  void provessertTest(){
+
+        Set<String> dies = new HashSet<>();
+
+        dies.add("dilluns");
+        dies.add("dilluns");
+        dies.add("dilluns");
+
+        assertEquals(dies.size() , 1);
+
     }
 
 
