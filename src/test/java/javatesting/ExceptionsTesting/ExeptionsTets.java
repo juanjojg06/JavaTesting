@@ -79,7 +79,25 @@ public class ExeptionsTets {
         }
     }
 
+    @Test(expected = NullPointerException.class)
+    public  void exceptionErronia() {
 
+        Integer edat = null;
+        String edatEnlletres="" ;
+        String text;
+
+        try {
+            System.out.println("Paso 1 Generemos NUllPointException");
+            edatEnlletres = edat.toString();
+            throw new IllegalArgumentException("excepcion crea i lanza por mi ");
+
+        }catch (IllegalArgumentException e){
+            System.out.println("Paso 2 Capturamos  la illegalArgumetsException");
+        }finally {
+            System.out.println("Paso final codigo de cerramiento");
+        }
+
+    }
 
 
 
