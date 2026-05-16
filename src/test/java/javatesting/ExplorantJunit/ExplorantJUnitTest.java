@@ -2,6 +2,8 @@ package javatesting.ExplorantJunit;
 
 import org.junit.*;
 import org.junit.rules.ExpectedException;
+
+import static org.hamcrest.CoreMatchers.*;
 import static org. junit. Assert.*;
 
 public class ExplorantJUnitTest {
@@ -47,10 +49,15 @@ public void illegalParameterestest(){
     public void assercionsDeJUnit(){
 
     assertEquals(5 , 2+3);
+    assertFalse("false es false", false);
 
 }
 
+@Test
+    public  void  assertThatAmbHamcrest(){
 
+    assertThat(4+5, is(9));
+}
 
 
 
