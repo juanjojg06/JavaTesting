@@ -6,10 +6,11 @@ import java.security.InvalidParameterException;
 
 public class ExplorantJUnitTest {
 
-@Test(expected = InvalidParameterException.class)
+@Test(expected = IllegalArgumentException.class)
 
     public void testedJantIllegalArgumentException(){
 
+    throw new IllegalArgumentException();
 
 }
 
