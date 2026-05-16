@@ -1,5 +1,5 @@
 package javatesting.ExceptionsTesting;
-//14:44
+
 import org.junit.Test;
 import static org. junit. Assert.*;
 public class ExeptionsTets {
