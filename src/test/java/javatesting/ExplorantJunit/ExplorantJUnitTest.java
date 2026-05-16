@@ -2,7 +2,7 @@ package javatesting.ExplorantJunit;
 
 import org.junit.*;
 import org.junit.rules.ExpectedException;
-
+import static org. junit. Assert.*;
 
 public class ExplorantJUnitTest {
     @Rule
@@ -41,5 +41,17 @@ public void illegalParameterestest(){
     public  static void executaUnCopPerClasseDespuesDeQualsevolTets(){
         System.out.println("Despues de ejecutar el test , una vez por clase");
     }
+
+
+@Test
+    public void assercionsDeJUnit(){
+
+    assertEquals(5 , 2+3);
+
+}
+
+
+
+
 
 }
