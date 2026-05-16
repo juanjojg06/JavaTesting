@@ -1,10 +1,14 @@
 package javatesting.ExplorantJunit;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
-import java.security.InvalidParameterException;
 
 public class ExplorantJUnitTest {
+    @Rule
+    public ExpectedException exprction = ExpectedException.none();
+
 
 @Test(expected = IllegalArgumentException.class)
 
@@ -13,5 +17,13 @@ public class ExplorantJUnitTest {
     throw new IllegalArgumentException();
 
 }
+@Test
+public void illegalParameterestest(){
+    exprction.expect(IllegalArgumentException.class);
+
+    throw  new IllegalArgumentException();
+}
+
+
 
 }
