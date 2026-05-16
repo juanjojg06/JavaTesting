@@ -1,8 +1,6 @@
 package javatesting.ExplorantJunit;
 
-import org.junit.BeforeClass;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.ExpectedException;
 
 
@@ -34,10 +32,14 @@ public void illegalParameterestest(){
 }
 
 @BeforeClass
-
     public  static void executaUnCopPerClasseAbansDeQualsevolTets(){
-
     System.out.println("Antes de ejecutar el test , una vez por clase");
-}
+    };
+
+
+@AfterClass
+    public  static void executaUnCopPerClasseDespuesDeQualsevolTets(){
+        System.out.println("Despues de ejecutar el test , una vez por clase");
+    }
 
 }
